@@ -7629,7 +7629,8 @@ header .sticky__label {
 }
 
 .site-footer.default .footer-area-wrap > .container {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
+  padding-top: 0px;
 }
 
 @media (min-width: 544px) {
