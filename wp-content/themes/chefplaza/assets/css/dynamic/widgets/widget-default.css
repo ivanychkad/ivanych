@@ -255,7 +255,7 @@
 .widget.widget_rating_filter ul .children,
 .widget.widget_nav_menu ul .children,
 .widget.widget_nav_menu .sub-menu li {
-	border-top: 1px solid $regular_accent_color_4;
+	/*border-top: 1px solid $regular_accent_color_4;*/
 }
 
 .tm-products-smart-box-widget__rd-material-tabs { border: 1px solid $regular_accent_color_4; }

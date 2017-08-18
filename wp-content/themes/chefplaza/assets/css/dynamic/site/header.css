@@ -73,21 +73,29 @@
 
 @media (min-width: 768px) {
 	.top-panel__search {
-		border-top: 1px solid $regular_accent_color_4;
-		border-right: 1px solid $regular_accent_color_4;
-		border-left: 1px solid $regular_accent_color_4;
+		/*border-top: 1px solid $regular_accent_color_4;*/
+		/*border-right: 1px solid $regular_accent_color_4;*/
+		/*border-left: 1px solid $regular_accent_color_4;*/
+		border-right: 1px solid #23282d;
+		border-bottom: 3px solid #23282d;
+		border-left: 1px solid #23282d;
 	}
 
 	.top-panel .site-header-cart {
-		border-top: 1px solid $regular_accent_color_4;
-		border-right: 1px solid $regular_accent_color_4;
-		border-bottom: 3px solid $regular_accent_color_5;
-		border-left: 1px solid $regular_accent_color_4;
+		/*border-top: 1px solid $regular_accent_color_4;*/
+		/*border-right: 1px solid $regular_accent_color_4;*/
+		/*border-bottom: 3px solid $regular_accent_color_5;*/
+		/*border-left: 1px solid $regular_accent_color_4;*/
+		border-top: 1px solid #23282d;
+		border-right: 1px solid #23282d;
+		border-bottom: 3px solid #23282d;
+		border-left: 1px solid #23282d;
 	}
 
 	.site-header-cart .cart-contents:before,
 	.site-header-cart .cart-contents:after {
-		background: $regular_accent_color_1;
+		/*background: $regular_accent_color_1;*/
+		background: #23282d;
 	}
 }
 

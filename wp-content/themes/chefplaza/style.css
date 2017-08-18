@@ -6278,6 +6278,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   flex: 0 1 auto;
   margin-right: -1px;
   margin-bottom: -1px;
+  border: none;
 }
 
 .top-panel .top-panel__search {
@@ -6537,7 +6538,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   box-shadow: 0 0 10px 3px rgba(165, 165, 165, 0.1);
   transition: all .2s ease;
   text-align: left;
-  background: #595959;
+  background: #23282d;
 
 }
 
@@ -8039,8 +8040,8 @@ header .sticky__label {
 .footer-area .widget.widget_layered_nav_filters ul > li .children,
 .footer-area .widget.widget_rating_filter ul > li .children,
 .footer-area .widget.widget_nav_menu ul > li .children {
-  margin-top: 9px;
-  padding-top: 9px;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .sidebar .widget.widget_archive ul > li .children li, .sidebar .widget.widget_categories ul > li .children li, .sidebar .widget.widget_product_categories ul > li .children li, .sidebar .widget.widget_pages ul > li .children li, .sidebar .widget.widget_meta ul > li .children li, .sidebar .widget.widget_rss ul > li .children li, .sidebar .widget.widget_layered_nav ul > li .children li, .sidebar .widget.widget_layered_nav_filters ul > li .children li, .sidebar .widget.widget_rating_filter ul > li .children li, .sidebar .widget.widget_nav_menu ul > li .children li,
@@ -8087,7 +8088,7 @@ header .sticky__label {
   .footer-area .widget.widget_nav_menu ul > li .children li a {
     font-size: 1.125px;
     /*font-size: 0.07031rem;*/
-    font-size: 0.7031rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -8102,8 +8103,8 @@ header .sticky__label {
 .footer-area .widget.widget_layered_nav_filters ul > li + li,
 .footer-area .widget.widget_rating_filter ul > li + li,
 .footer-area .widget.widget_nav_menu ul > li + li {
-  margin-top: 9px;
-  padding-top: 9px;
+  margin-top: 3px;
+  padding-top: 3px;
 }
 
 .sidebar .widget.widget_archive ul > li a:hover, .sidebar .widget.widget_categories ul > li a:hover, .sidebar .widget.widget_product_categories ul > li a:hover, .sidebar .widget.widget_pages ul > li a:hover, .sidebar .widget.widget_meta ul > li a:hover, .sidebar .widget.widget_rss ul > li a:hover, .sidebar .widget.widget_layered_nav ul > li a:hover, .sidebar .widget.widget_layered_nav_filters ul > li a:hover, .sidebar .widget.widget_rating_filter ul > li a:hover, .sidebar .widget.widget_nav_menu ul > li a:hover,
