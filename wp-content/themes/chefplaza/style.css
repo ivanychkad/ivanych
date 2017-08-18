@@ -11125,6 +11125,7 @@ h2.widget-title:before, h3.widget-title:before, .related h2:before {
 .swiper-slide .post-thumbnail__link img {
   transition: .5s;
   will-change: transform;
+  height: 200px
 }
 
 .swiper-slide .post-thumbnail__link:before {
