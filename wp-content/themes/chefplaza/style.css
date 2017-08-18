@@ -8086,7 +8086,8 @@ header .sticky__label {
   .footer-area .widget.widget_rating_filter ul > li .children li a,
   .footer-area .widget.widget_nav_menu ul > li .children li a {
     font-size: 1.125px;
-    font-size: 0.07031rem;
+    /*font-size: 0.07031rem;*/
+    font-size: 0.7031rem;
   }
 }
 
@@ -9214,10 +9215,11 @@ header .sticky__label {
 }
 
 .widget.widget_layered_nav ul li, .widget.widget_categories ul li, .widget.widget_product_categories ul li {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: -webkit-flex;*/
+  /*display: -moz-flex;*/
+  /*display: -ms-flexbox;*/
+  /*display: flex;*/
+  display:block;
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
