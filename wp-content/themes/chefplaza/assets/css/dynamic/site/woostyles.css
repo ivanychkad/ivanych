@@ -483,7 +483,8 @@ ul.payment_methods li label {
 
 .widget_shopping_cart .widget_shopping_cart_content .cart_list li a:hover { color: $regular_accent_color_1; }
 
-.woocommerce .category_wrapper .products { border-bottom: 1px solid $regular_accent_color_4; }
+/*.woocommerce .category_wrapper .products { border-bottom: 1px solid $regular_accent_color_4; }*/
+.woocommerce .category_wrapper .products { border-bottom: none;}
 
 .woocommerce-ordering .chosen-container,
 .woocommerce-ordering select { background: $invert_accent_color_3; }
@@ -525,7 +526,8 @@ h5.widget-product-title{
 	background-color: $regular_accent_color_1;
 }
 button.single_add_to_cart_button:before{
-	background-color: $regular_text_color!important;
+	/*background-color: $regular_text_color!important;*/
+	background-color: $regular_accent_color_1!important;
 }
 .jssora11l,
 .jssora11r{
