@@ -1,0 +1,24 @@
+.footer-menu {
+	margin: 2em 0 0;
+
+	&__items {
+		@include flexbox;
+		@include flex-wrap(wrap);
+		@include justify-content(center);
+		margin: 0;
+		padding-left: 0;
+		list-style: none;
+
+		.menu-item {
+			@include flexbox;
+			@include align-items(flex-start);
+			padding: .5em 1em;
+			@include font-size(14);
+
+			&:first-child {
+				padding-left: 0;
+			}
+		}
+	}
+}
+

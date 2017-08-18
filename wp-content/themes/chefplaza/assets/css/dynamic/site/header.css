@@ -1,0 +1,144 @@
+/* #Header */
+.header-container {
+	background-color: $header_bg_color;
+	background-image: url($header_bg_image);
+	background-repeat: $header_bg_repeat;
+	background-position: $header_bg_position_x top;
+	background-attachment: $header_bg_attachment;
+	border-bottom: 1px solid $regular_accent_color_4;
+}
+
+/* ##Logo */
+.site-logo {
+	font-style: $header_logo_font_style;
+	font-weight: $header_logo_font_weight;
+	font-size: $header_logo_font_size{px};
+	font-family: @font_family( $header_logo_font_family );
+}
+
+.site-logo__link{
+	color:$regular_text_color;
+}
+.site-logo__link:hover { color: $regular_text_color; }
+
+/* ##Top Panel */
+.top-panel {
+	background-color: $top_panel_bg;
+	border-bottom: 1px solid $regular_accent_color_4;
+}
+
+.top-panel .woocommerce-currency-switcher-form {
+	border-right: 1px solid $regular_accent_color_4;
+	border-left: 1px solid $regular_accent_color_4;
+}
+
+.top-panel .dd-select:before {
+    background: $regular_text_color;
+}
+
+.top-panel .dd-select:hover .dd-selected-text{
+	color:$invert_text_color;
+}
+.top-panel .dd-select:hover .dd-pointer{
+	border-top: solid 5px $invert_text_color;
+}
+.woocommerce-currency-switcher-form .dd-select:hover .dd-pointer.dd-pointer-up{
+	border-bottom: solid 5px $invert_text_color !important;
+}
+
+.top-panel__message .fa,
+.top-panel__message .material-icons { color: $regular_accent_color_1; }
+
+
+.top-panel .chosen-container {
+	border-top: 1px solid $regular_accent_color_4;
+	border-right: 1px solid $regular_accent_color_4;
+	border-bottom: 3px solid $regular_text_color;
+	border-left: 1px solid $regular_accent_color_4;
+}
+
+.top-panel .chosen-container:before { background: $regular_text_color; }
+
+.top-panel .chosen-container .chosen-single:after { background: $regular_text_color; }
+
+.top-panel .chosen-container a:hover span,
+.top-panel .chosen-container a:hover:before { color: $invert_text_color; }
+
+.top-panel .currency_switcher .wcj_widget_multicurrency select {
+	border-top: 1px solid $regular_accent_color_4;
+	border-right: 1px solid $regular_accent_color_4;
+	border-bottom: 3px solid $regular_text_color;
+	border-left: 1px solid $regular_accent_color_4;
+}
+
+@media (min-width: 768px) {
+	.top-panel__search {
+		border-top: 1px solid $regular_accent_color_4;
+		border-right: 1px solid $regular_accent_color_4;
+		border-left: 1px solid $regular_accent_color_4;
+	}
+
+	.top-panel .site-header-cart {
+		border-top: 1px solid $regular_accent_color_4;
+		border-right: 1px solid $regular_accent_color_4;
+		border-bottom: 3px solid $regular_accent_color_5;
+		border-left: 1px solid $regular_accent_color_4;
+	}
+
+	.site-header-cart .cart-contents:before,
+	.site-header-cart .cart-contents:after {
+		background: $regular_accent_color_1;
+	}
+}
+
+.top-panel__menu-list .menu-item a { color: $regular_accent_color_5; }
+
+.top-panel__menu-list .menu-item a:hover { color: $regular_accent_color_1; }
+
+.top-panel__menu-list .menu-item.current-menu-item a:before,
+.top-panel__menu-list .menu-item.current_page_item a:before { background: $regular_accent_color_5; }
+
+.site-header-cart .cart-contents .count i { color: $regular_text_color; }
+
+.site-header-cart .cart-contents .count span {
+	color: $invert_text_color;
+	background: $regular_accent_color_1;
+}
+
+.site-header-cart .cart-contents:hover .count span {
+	color: $regular_text_color;
+	background: $invert_text_color
+}
+
+@media (max-width: 767px) {
+	.site-header-cart.navbar-header-cart .cart-contents .count span {
+		color: $regular_text_color;
+	}
+}
+
+.top-panel input[type="search"],
+.top-panel input[type="search"]:-webkit-autofill {
+	background: $invert_text_color;
+	color: $regular_text_color !important;
+}
+
+@media (min-width: 768px) {
+	.top-panel .top-panel__search .widget_product_search .woocommerce-product-search {
+		border-right: 1px solid $regular_accent_color_4;
+		border-bottom: 1px solid $regular_accent_color_4;
+		border-left: 1px solid $regular_accent_color_4;
+	}
+
+	.top-panel .top-panel__search .search-form__submit {
+		border-left: 1px solid $regular_accent_color_4;
+	}
+
+	.top-panel .navbar-search-toggle:before,
+	.top-panel .navbar-search-toggle:after { color: $regular_text_color; }
+
+	.top-panel .navbar-search-toggle:hover:before,
+	.top-panel .navbar-search-toggle:hover:after { color: $regular_accent_color_1; }
+}
+.shopping_cart-dropdown-wrap h3 {
+	border-bottom: 1px solid $regular_accent_color_4;
+}

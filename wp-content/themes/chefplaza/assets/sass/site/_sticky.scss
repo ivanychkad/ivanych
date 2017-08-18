@@ -1,0 +1,130 @@
+.sticky {
+	display: block;
+
+	&__label {
+		display: block;
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		text-align: center;
+		position: static;
+
+		> i {
+			display: inline-block;
+			font-size: 20px;
+			line-height: 40px;
+
+			.posts-list & {
+				font-size: 20px;
+				margin-right: 0;
+			}
+		}
+
+		.post-thumbnail * + &,
+		.post-format-wrap * + &,
+		.post-content-video * + & {
+			float: none;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			z-index: 99;
+
+			@include media-breakpoint-up(lg) {
+				top: 30px;
+				left: 30px;
+			}
+		}
+
+		.post-content-video * + & {
+			@include media-breakpoint-up(lg) {
+				top: 40px;
+				left: 30px;
+			}
+		}
+
+		header & {
+			float: right;
+			margin-left: 30px;
+		}
+
+		.format-quote & {
+			margin-bottom: 10px;
+		}
+
+		@include media-breakpoint-up(sm) {
+			height: 54px;
+			width: 54px;
+
+			> i {
+				font-size: 21px;
+				line-height: 54px;
+
+				.posts-list & {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+
+	&.posts-list__item {
+		.btn {
+			@include media-breakpoint-up(lg) {
+				.posts-list--grid-2-cols &,
+				.posts-list--grid-3-cols & {
+					padding: $button__indents;
+				}
+			}
+
+			&__text {
+				@include media-breakpoint-up(lg) {
+					display: inline-block;
+					.posts-list--masonry-2-cols &,
+					.posts-list--masonry-3-cols & {
+						display: none;
+					}
+				}
+			}
+
+			&__icon,
+			.material-icons,
+			.fa {
+				@include media-breakpoint-up(lg) {
+					display: none;
+					.posts-list--masonry-2-cols &,
+					.posts-list--masonry-3-cols & {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+
+	.entry-title {
+		.posts-list--grid-2-cols &,
+		.posts-list--grid-3-cols & {
+			@include media-breakpoint-up(lg) {
+				font-size: 30px;
+			}
+		}
+	}
+
+	.post-thumbnail__img {
+		width: 100%;
+	}
+}
+
+.posts-list {
+	&__item {
+		.posts-list--grid-2-cols &.hentry.post,
+		.posts-list--grid-3-cols &.hentry.post {
+			@include flexbox;
+			@include flex-direction(column);
+			@include justify-content(space-between);
+		}
+	}
+}
+
+.post-format-wrap,
+.post-content-video {
+	position: relative;
+}

@@ -1,0 +1,58 @@
+.post {
+	&-author {
+		&-bio {
+			margin: -1px 0 30px;
+		}
+
+		&__holder {
+			padding: 20px 30px;
+		}
+
+		&__content {
+			overflow: hidden;
+		}
+
+		&__avatar {
+			margin: 0;
+
+			.avatar {
+				width: 90px;
+				vertical-align: top;
+				border-radius: 50%;
+
+				@include media-breakpoint-up(sm) {
+					width: 120px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					float: left;
+				}
+			}
+		}
+
+		&__title {
+			margin: 10px 0;
+		}
+
+		@include media-breakpoint-up(md) {
+			&-bio {
+				margin: -1px 0 69px;
+			}
+
+			&__holder {
+				padding: 40px 41px 18px;
+			}
+
+			&__avatar {
+				.avatar {
+					width: auto;
+					margin: 0 29px 22px 0;
+				}
+			}
+
+			&__title {
+				margin: 30px 0 21px;
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.share-btns {
+	&__list {
+		.card &,
+		.hentry & {
+			@include media-breakpoint-up(sm) {
+				margin-top: 17px;
+				float: left;
+			}
+		}
+	}
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+
+		+ .share-btns__item {
+			margin-left: 27px;
+		}
+	}
+
+	&__link {
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		@include font-size(13);
+
+		@include media-breakpoint-up(sm) {
+			@include font-size(15);
+		}
+	}
+}

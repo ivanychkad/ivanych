@@ -1,0 +1,36 @@
+.site-footer.centered {
+	text-align: center;
+
+	.footer-container {
+		padding: 46px 20px 10px;
+	}
+
+	.footer-text-center {
+		max-width: 1220px;
+		margin-top: 45px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	* + .social-list--footer {
+		margin-top: 50px;
+
+		+ .footer-copyright {
+			margin-top: 56px;
+		}
+	}
+
+	* + .footer-copyright {
+		margin-top: 47px;
+	}
+
+	@include media-breakpoint-up(sm) {
+		.footer-container {
+			padding: 84px 30px 102px;
+		}
+
+		* + .footer-copyright {
+			margin-top: 70px;
+		}
+	}
+}

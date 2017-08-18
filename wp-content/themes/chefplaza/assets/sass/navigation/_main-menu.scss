@@ -1,0 +1,313 @@
+/* Basic */
+.main-navigation {
+	> ul > li {
+		a {
+			padding-bottom: 26px;
+		}
+
+		+ li {
+			margin-left: 40px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			a {
+				padding-bottom: 41px;
+			}
+		}
+
+		@include media-breakpoint-up(xl) {
+			a {
+				padding-bottom: 60px;
+			}
+		}
+	}
+
+	ul {
+		display: none;
+		margin: 0;
+		padding-left: 0;
+		list-style: none;
+	}
+
+	li {
+		position: relative;
+		text-align: left;
+	}
+
+	a {
+		position: relative;
+		display: block;
+		text-decoration: none;
+		@include font-size(14);
+		font-weight: 400;
+	}
+
+	@include media-breakpoint-down(sm) {
+		ul {
+			ul {
+				a {
+					text-indent: 1rem;
+				}
+
+				ul {
+					a {
+						text-indent: 2rem;
+					}
+
+					ul {
+						a {
+							text-indent: 3rem;
+						}
+
+						ul {
+							a {
+								text-indent: 4rem;
+							}
+
+							ul {
+								a {
+									text-indent: 5rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.toggled {
+			ul {
+				display: block;
+			}
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		ul {
+			display: block;
+		}
+
+		li {
+			&:hover,
+			&.menu-hover {
+				& > ul {
+					top: 100%;
+					left: 0;
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+
+			& > ul {
+				&.in-transition {
+					left: 0;
+				}
+			}
+
+			li {
+				&:hover,
+				&.menu-hover {
+					& > ul {
+						top: -15px;
+						left: 100%;
+						margin-top: 0;
+						margin-left: 29px;
+					}
+				}
+				& > ul {
+					&.in-transition {
+						left: 100%;
+					}
+				}
+			}
+		}
+
+		li.menu-item + li.current_page_parent .sub-menu > li > ul.sub-menu {
+			right: 100%;
+			left: auto;
+			margin-right: 29px;
+		}
+
+		.menu {
+			@include flexbox;
+			@include flex-wrap(wrap);
+			@include justify-content(flex-start);
+			width: 100%;
+
+			> li {
+				@include flexbox;
+				@include align-items(flex-start);
+
+				&:hover > .sub-menu {
+					top: 100%;
+					left: 0;
+				}
+			}
+		}
+
+		.sub-menu {
+			position: absolute;
+			z-index: 999;
+			top: 120%;
+			left: 0;
+			visibility: hidden;
+			margin: 0;
+			transition: 200ms linear;
+			transition-property: top, opacity, visibility;
+			opacity: 0;
+
+			> li > ul.sub-menu {
+				top: -15px;
+				left: 100%;
+				right: auto;
+				margin-top: 0;
+				margin-left: 29px;
+				li:first-child ul {
+					top: -15px;
+				}
+			}
+		}
+
+		.menu-toggle {
+			display: none;
+		}
+
+		@include media-breakpoint-up(lg) {
+			li.menu-item + li.current_page_parent .sub-menu > li > ul.sub-menu {
+				left: 100%;
+				right: auto;
+				margin-right: 0;
+				margin-left: 29px;
+			}
+		}
+	}
+}
+
+/* Skin */
+.main-navigation {
+	.menu {
+		> li {
+			> a {
+				@include media-breakpoint-up(md) {
+					border-bottom: none;
+				}
+			}
+
+			&:after {
+				/* Marker (level 1) */
+				content: '';
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 0;
+				opacity: 0;
+				transition: all .2s ease;
+				pointer-events: none;
+			}
+
+			&:last-child {
+				> a {
+					border-bottom: none;
+				}
+			}
+
+			&:hover,
+			&.menu-hover,
+			&.current_page_item,
+			&.current_page_ancestor,
+			&.current-menu-item,
+			&.current-menu-ancestor {
+				&:after {
+					opacity: 1;
+					height: 6px;
+				}
+			}
+
+			&[hidden] {
+				display: none;
+			}
+		}
+	}
+
+	.sub-menu {
+		min-width: 165px;
+		margin-top: 0;
+		padding: 15px 29px 15px;
+
+		li {
+			a {
+				padding-bottom: 0;
+			}
+
+			&.menu-item-has-children {
+				&:after {
+					/* Marker (level 2, 3, ..., N) */
+					content: '\e5cc';
+					top: -5px;
+					right: -4px;
+					@include font-size(22);
+					font-family: 'Material Icons';
+					transition: .1s;
+				}
+			}
+
+			+ li {
+				a {
+					padding-top: 10px;
+				}
+
+				&.menu-item-has-children {
+					&:after {
+						top: 5px;
+					}
+				}
+			}
+		}
+
+		a {
+			@include font-size(14);
+		}
+	}
+
+	li {
+		&:after {
+			/* Marker style */
+			position: absolute;
+		}
+	}
+}
+
+/* Menu items description */
+.menu-item__desc {
+	@include font-size(12);
+
+	@include media-breakpoint-up(md) {
+		.menu > li > a > & {
+			position: absolute;
+			right: -1px;
+			left: -1px;
+		}
+	}
+}
+.sub-menu-open + .sub-menu{
+	display: block!important;
+}
+.centered #main-menu{
+	@include media-breakpoint-up(md) {
+		@include justify-content(center);
+	}
+}
+
+.super-guacamole__menu.menu-item.menu-item-has-children:hover{
+	.sub-menu{
+		right: 0;
+		left: auto;
+	}
+}
+.super-guacamole__menu.menu-item.menu-item-has-children{
+	.sub-menu{
+		right: 0!important;
+		left: auto!important;
+	}
+}

@@ -1,0 +1,17 @@
+@include media-breakpoint-up(lg) {
+	.alignleft {
+		float: left;
+		margin: -3px 60px 15px 0;
+	}
+
+	.alignright {
+		float: right;
+		margin: -3px 0 15px 60px;
+	}
+
+	.aligncenter {
+		clear: both;
+		display: block;
+		margin: .4090909090909091em auto;
+	}
+}

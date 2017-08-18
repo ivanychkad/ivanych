@@ -1,0 +1,82 @@
+#page{
+	overflow: hidden;
+}
+
+blockquote {
+	position: relative;
+	margin: 2.32em 0 1.45em;
+	padding: 1.86em 3.41em .4em 2.68em;
+
+	&:before {
+		content: '\201C';
+		position: absolute;
+		top: 0;
+		left: -3px;
+		font-size: 4.54em;
+		line-height: .7;
+	}
+
+	p {
+		margin: 0;
+
+		& + p {
+			margin-top: 1em;
+		}
+	}
+
+	i,
+	cite {
+		display: block;
+		margin-top: 1.82em;
+
+		&:before {
+			content: '- ';
+		}
+	}
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	margin: 1.36em 0;
+	overflow: hidden;
+	clear: both;
+
+	@include media-breakpoint-up(sm) {
+		margin: 4.14em 0 2.77em;
+	}
+
+	ol + &,
+	ul + & {
+		margin-top: 2.41em;
+	}
+}
+
+code {
+	padding: 2px 5px;
+}
+
+/*--------------------------------------------------------------
+## Lists
+--------------------------------------------------------------*/
+@import "lists";
+
+/*--------------------------------------------------------------
+## Tables
+--------------------------------------------------------------*/
+@import "tables";
+
+/*--------------------------------------------------------------
+## Preloader
+--------------------------------------------------------------*/
+@import "page-preloader";
+
+/*--------------------------------------------------------------
+## ToTop button
+--------------------------------------------------------------*/
+@import "totop-button";
+
+/*--------------------------------------------------------------
+## Chosen
+--------------------------------------------------------------*/
+@import "chosen";

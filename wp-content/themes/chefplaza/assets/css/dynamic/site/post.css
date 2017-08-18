@@ -1,0 +1,133 @@
+/* #Entry Meta */
+.post__date,
+.post__comments,
+.post__cats,
+.posted-by,
+.post__tags,
+.post-author {
+	font-family: $h6_font_family;
+	font-size: @font_size( $h6_font_size[size], multiple, round, .875)px;
+	line-height: $h6_line_height;
+	font-weight: $h6_font_weight;
+	color: $regular_accent_color_5;
+}
+
+@media (min-width: 544px) {
+	.post__date,
+	.post__comments,
+	.post__cats,
+	.posted-by,
+	.post__tags,
+	.post-author {
+		font-size: @font_size($h6_font_size[size], multiple, round, 1)px;
+	}
+}
+
+.post__cats a,
+.post__date a,
+.post__comments a,
+.post__cats a,
+.posted-by a,
+.post__tags a,
+.post-author a { color: $regular_link_color; }
+
+.post__cats a:hover,
+.post__date a:hover,
+.post__comments a:hover,
+.post__cats a:hover,
+.posted-by a:hover,
+.post__tags a:hover,
+.post-author a:hover { color: $regular_link_hover_color; }
+
+/* #Post Format */
+.format-quote .post-quote {
+	color: $invert_text_color;
+	background-color: $regular_text_color;
+}
+.format-quote .post-quote blockquote {
+	color: $invert_text_color;
+}
+
+.post-format-link{
+	color: $invert_link_color;
+	background-color: @alpha( $regular_accent_color_2, 78 );
+}
+
+.post-format-link:hover {
+	color: $invert_link_color;
+	background-color: @alpha( $regular_accent_color_1, 78 );
+}
+
+	/* #Author Bio */
+.post-author-bio {
+	border-top: 1px solid $regular_accent_color_4;
+	border-bottom: 1px solid $regular_accent_color_4;
+}
+
+.post-author__title { font-size: @font_size( $body_font_size[size], multiple, round, .63)px; }
+
+.post-author__title a {
+	color: $regular_link_color;
+	font-weight: $body_font_weight;
+}
+
+.post-author__title a:hover { color: $regular_link_hover_color; }
+
+/* #Comment */
+.comment-body { border: 1px solid $regular_accent_color_4 }
+
+.comment-content {
+	font-family: $body_font_family;
+	font-style: $body_font_style;
+	font-weight: $body_font_weight;
+	font-size: @font_size($body_font_size, multiple, ceil, .63)px;
+	line-height: $body_line_height;
+	letter-spacing: $body_letter_spacing{px};
+	color: $regular_text_color;
+}
+
+@media (min-width: 544px) {
+	.comment-content { font-size: @font_size($body_font_size, multiple, ceil, 1)px; }
+
+	.post-author__title { font-size: @font_size( $body_font_size[size], multiple, round, 1 )px; }
+}
+
+.comment-body .fn {
+	font-weight: $body_font_weight;
+	color: $regular_accent_color_1;
+}
+
+.reply i { color: $regular_accent_color_1; }
+
+.reply:hover i { color: $regular_link_hover_color; }
+
+.comment-list > .comment > .children { border: 1px solid $regular_accent_color_4; }
+
+.comment-list .children:before { background: $regular_accent_color_4; }
+
+#cancel-comment-reply-link { color: $regular_accent_color_1; }
+
+#cancel-comment-reply-link:hover { color: $regular_accent_color_2; }
+
+.entry-meta > * + *:before,
+.entry-meta-bottom > * + *:before { color: $regular_accent_color_1; }
+
+.breadcrumbs ~ * .hentry,
+.breadcrumbs ~ * #container,
+.breadcrumbs ~ * .card { border-top: 1px solid $regular_accent_color_4; }
+
+.breadcrumbs ~ * .hentry.post,
+.breadcrumbs ~ * .posts-list { border-bottom: 1px solid $regular_accent_color_4; }
+
+.required { color: $regular_accent_color_1; }
+
+.sticky__label {
+	color: $invert_accent_color_1;
+	background: $regular_accent_color_1;
+}
+
+.post.post_format-post-format-image .post-thumbnail__link:before,
+.post .post-gallery__link:before {
+	color: $regular_text_color;
+	background: @alpha($invert_text_color, 80);
+}

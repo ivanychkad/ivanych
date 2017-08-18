@@ -1,0 +1,38 @@
+.container {
+	&.site-header,
+	&.site-content,
+	&.site-footer {
+		> .container {
+			max-width: inherit;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+// Theme specific
+.site-header,
+.site-footer {
+	&.container {
+		max-width: 100%;
+		padding: 0;
+	}
+}
+
+.site-content {
+	padding-top: 15px;
+	padding-bottom: 10px;
+
+	@include media-breakpoint-up(sm) {
+		padding-top: 36px;
+		padding-bottom: 68px;
+	}
+
+	.home & {
+		padding-top: 0;
+	}
+}
+
+.single-post .post__tags {
+	float: none;
+}

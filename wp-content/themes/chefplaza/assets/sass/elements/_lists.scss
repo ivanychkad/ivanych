@@ -1,0 +1,105 @@
+ul, ol {
+	margin: .9em 0;
+	padding-left: 0;
+
+	.page .entry-content > &,
+	.entry-content > &,
+	.entry-summary > div &,
+	.comment-content &  {
+		li {
+			position: relative;
+
+			+ li {
+				margin-top: 19px;
+			}
+		}
+	}
+}
+
+ol {
+	.page .entry-content > &,
+	.entry-content > &,
+	.entry-summary > div &,
+	.comment-content & {
+		counter-reset: li;
+
+		> li {
+			position: relative;
+
+			&:before {
+				content: counter(li, decimal-leading-zero) '.';
+				counter-increment: li;
+				margin-right: 4px;
+			}
+
+			ol {
+				counter-reset: li;
+				> li {
+					position: relative;
+
+					&:before {
+						content: counter(li, decimal-leading-zero) '.';
+						counter-increment: li;
+						margin-right: 4px;
+					}
+				}
+			}
+		}
+	}
+}
+
+ul {
+	.page .entry-content > &,
+	.entry-content > &,
+	.entry-summary > div &,
+	.comment-content & {
+		counter-reset: li;
+		ol > li {
+			position: relative;
+
+			&:before {
+				content: counter(li, decimal-leading-zero) '.';
+				counter-increment: li;
+				margin-right: 4px;
+			}
+
+			ol {
+				counter-reset: li;
+				> li {
+					position: relative;
+
+					&:before {
+						content: counter(li, decimal-leading-zero) '.';
+						counter-increment: li;
+						margin-right: 4px;
+					}
+				}
+			}
+		}
+	}
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+/* Inline list */
+.inline-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	li {
+		display: inline-block;
+	}
+}

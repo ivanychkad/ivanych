@@ -1,0 +1,55 @@
+h1, h2, h3 {
+	text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+
+h1 {
+	margin-bottom: .3269230769230769em;
+
+	+ p {
+		margin-top: .7727272727272727em;
+	}
+}
+
+h2 {
+	margin-bottom: .9375em;
+
+	+ p {
+		margin-top: 1.363636363636364em;
+	}
+}
+
+h3 {
+	margin-bottom: 1.1em;
+
+	+ p {
+		margin-top: 1em;
+	}
+}
+
+h4 {
+	margin-bottom: 1.1em;
+
+	+ p{
+		margin-top: 1em;
+	}
+}
+
+h5 {
+	margin-bottom: 1.222222222222222em;
+
+	+ p{
+		margin-top: 1em;
+	}
+}
+
+h6 {
+	margin-bottom: 1.4375em;
+
+	+ p{
+		margin-top: 1.045454545454545em;
+	}
+}

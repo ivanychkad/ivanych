@@ -1,0 +1,130 @@
+/* #Button Appearance Styles (regular scheme) */
+.btn,
+.button,
+button,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+	font-family: $h3_font_family;
+}
+.btn,
+.button,
+button,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.btn-default,
+.btn-secondary,
+.form-submit #submit {
+	color: $invert_link_color;
+	background: $regular_accent_color_1;
+
+}
+.btn:hover,
+.button:hover,
+button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.btn-default:hover,
+.btn-secondary:hover,
+.form-submit #submit:hover {
+	color: $invert_link_color;
+	background: $regular_accent_color_2;
+}
+.btn-default {
+	background: $regular_accent_color_1;
+}
+
+.btn-primary,
+.btn-secondary,
+.woocommerce .button.wc-backward,
+.tm_about_store_widget .btn,
+a.button.alt.checkout-button,
+.woocommerce .widget_price_filter button.button,
+.woocommerce #respond input#submit.btn-primary,
+.woocommerce a.button.btn-primary,
+.woocommerce button.button.btn-primary,
+.woocommerce input.button.btn-primary,
+.woocommerce button.button.single_add_to_cart_button,
+.woocommerce .add_to_cart_button.product_type_simple,
+.woocommerce .woocommerce-error a.button,
+.woocommerce .woocommerce-info a.button,
+.woocommerce .woocommerce-message a.button,
+.widget_shopping_cart .widget_shopping_cart_content .buttons .button,
+.btn-primary:hover,
+.btn-secondary:hover,
+.woocommerce .button.wc-backward:hover,
+.tm_about_store_widget .btn:hover,
+a.button.alt.checkout-button:hover,
+.woocommerce .widget_price_filter button.button:hover,
+.woocommerce .add_to_cart_button.product_type_simple:hover,
+.woocommerce #respond input#submit.btn-primary:hover,
+.woocommerce a.button.btn-primary:hover,
+.woocommerce button.button.btn-primary:hover,
+.woocommerce input.button.btn-primary:hover,
+.woocommerce button.button.single_add_to_cart_button:hover,
+.woocommerce .woocommerce-error a.button:hover,
+.woocommerce .woocommerce-info a.button:hover,
+.woocommerce .woocommerce-message a.button:hover,
+.widget_shopping_cart .widget_shopping_cart_content .buttons .button:hover {
+	color: $invert_link_color;
+}
+.btn-primary:before,
+.tm_about_store_widget .btn:before,
+.woocommerce .button.wc-backward:before,
+.woocommerce .widget_price_filter button.button:before,
+.woocommerce button.button.single_add_to_cart_button:before,
+.widget_shopping_cart .widget_shopping_cart_content .buttons .button:before {
+	background: $regular_accent_color_1;
+}
+.btn-primary:after,
+.tm_about_store_widget .btn:after,
+.woocommerce .button.wc-backward:after,
+.woocommerce .widget_price_filter button.button:after,
+.woocommerce button.button.single_add_to_cart_button:after,
+.widget_shopping_cart .widget_shopping_cart_content .buttons .button:after {
+	background: $regular_accent_color_2;
+}
+.btn-secondary:before,
+.woocommerce .woocommerce-error a.button:before,
+.woocommerce .woocommerce-info a.button:before,
+.woocommerce .woocommerce-message a.button:before,
+.checkout-button:before,
+.woocommerce table.shop_table tbody tr td.actions .coupon .button,
+.widget_shopping_cart .widget_shopping_cart_content .buttons .button.checkout:before {
+	/*background: $regular_accent_color_2;*/
+	background: $regular_accent_color_1;
+}
+.btn-secondary:after,
+.woocommerce .woocommerce-error a.button:after,
+.woocommerce .woocommerce-info a.button:after,
+.woocommerce .woocommerce-message a.button:after,
+.checkout-button:after,
+.woocommerce table.shop_table tbody tr td.actions .coupon .button:hover,
+.widget_shopping_cart .widget_shopping_cart_content .buttons .button.checkout:after {
+	/*background: $regular_link_color;*/
+	background: $regular_accent_color_2;
+}
+
+.woocommerce button.button.btn.tm-woowishlist-button, .woocommerce button.button.btn.tm-woocompare-button{
+	color:$regular_accent_color_5;
+}
+.woocommerce a.add_to_cart_button:before{
+	background: $regular_accent_color_1;
+}
+.woocommerce a.add_to_cart_button:after{
+	background: $regular_accent_color_2;
+}
+
+.widget-carousel .btn-primary{
+	border-color:$regular_text_color;
+	color:$regular_text_color;
+}
+.widget-carousel .btn-primary:hover{
+	background:$regular_text_color;
+	color:$invert_text_color;
+}

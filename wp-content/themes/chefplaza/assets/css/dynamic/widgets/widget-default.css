@@ -1,0 +1,349 @@
+/* #Widgets (defaults) */
+.widget li { color: $regular_link_color; }
+
+.invert .widget li { color: $invert_link_color; }
+
+.widget select { border: 1px solid $regular_accent_color_4; }
+
+.invert .widget select { color: $regular_text_color; }
+
+.sidebar .widget { border-top: 1px solid $regular_accent_color_4; }
+
+
+.breadcrumbs ~ * .sidebar .widget:first-child { border-top: 1px solid $regular_accent_color_4; }
+
+/* #Widget Calendar */
+.widget_calendar caption {
+	color: $invert_link_color;
+	background-color: $regular_accent_color_1;
+}
+
+.widget_calendar th { color: $regular_accent_color_1; }
+
+.invert .widget_calendar caption { background-color: $invert_accent_color_2; }
+
+.invert .widget_calendar th { color: $invert_accent_color_2; }
+
+/* #Widget Tag Cloud */
+.invert .tagcloud a:hover {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_2;
+}
+
+/* #Widget Recent Posts */
+.widget_recent_entries a,
+.widget_recent_comments a { color: $regular_text_color; }
+
+.widget_recent_entries a:hover,
+.widget_recent_comments a:hover{ color: $regular_link_color; }
+
+.widget_recent_entries .post-date,
+.widget_recent_entries .post-by,
+.widget_recent_comments .comment-author-link,
+.widget_recent_comments .recentcomments { color: $regular_accent_color_2; }
+
+.widget_recent_entries .post-by a { color: $regular_accent_color_2; }
+
+.widget_recent_entries .post-by a:hover { color: $regular_link_color; }
+
+.invert .widget_recent_entries .post-date,
+.invert .widget_recent_entries .post-by,
+.invert .widget_recent_comments .comment-author-link,
+.invert .widget_recent_comments .recentcomments { color: @darken( $invert_text_color, 10% ); }
+
+.widget_recently_viewed_products ul.product_list_widget > li .reviewer,
+.widget_recent_reviews ul.product_list_widget > li .reviewer,
+.widget_products ul.product_list_widget > li .reviewer,
+.widget_products ul.product_list_widget > li .product-widget-categories a,
+.widget_top_rated_products ul.product_list_widget > li .product-widget-categories a { color: $regular_text_color; }
+
+.widget_products ul.product_list_widget > li .product-widget-categories a:hover,
+.widget_top_rated_products ul.product_list_widget > li .product-widget-categories a:hover { color: $regular_accent_color_1; }
+
+.widget_recently_viewed_products ul.product_list_widget .widget_title_product,
+.widget_recent_reviews ul.product_list_widget .widget_title_product,
+.widget_top_rated_products ul.product_list_widget a,
+.widget_products ul.product_list_widget .widget_title_product { color: $regular_text_color; }
+
+.widget_recently_viewed_products ul.product_list_widget .widget_title_product:hover,
+.widget_recent_reviews ul.product_list_widget .widget_title_product:hover,
+.widget_top_rated_products ul.product_list_widget a:hover,
+.widget_products ul.product_list_widget .widget_title_product:hover { color: $regular_link_color; }
+
+.widget_products ul.product_list_widget > li { color: $regular_text_color; }
+
+.widget_recently_viewed_products ul.product_list_widget > li,
+.widget_recently_viewed_products ul.product_list_widget > li .amount,
+.widget_recently_viewed_products ul.product_list_widget > li ins,
+.widget_products ul.product_list_widget > li .amount,
+.widget_products ul.product_list_widget > li ins,
+.widget_top_rated_products ul.product_list_widget > li .amount,
+.widget_top_rated_products ul.product_list_widget > li ins {
+	color: $regular_text_color;
+}
+
+.widget_recently_viewed_products ul.product_list_widget > li del .amount,
+.widget_recently_viewed_products ul.product_list_widget > li del,
+.widget_products ul.product_list_widget > li del .amount,
+.widget_products ul.product_list_widget > li del,
+.widget_top_rated_products ul.product_list_widget > li del .amount,
+.widget_top_rated_products ul.product_list_widget > li del {
+	color: @darken( $regular_accent_color_4, 16.47);
+}
+
+.widget_recently_viewed_products ul.product_list_widget > li .product_title_link > a,
+.widget_recent_reviews ul.product_list_widget > li .product_title_link > a,
+.widget_top_rated_products ul.product_list_widget > li .product_title_link > a,
+.widget_products ul.product_list_widget > li .product_title_link > a { color: $regular_text_color; }
+
+.widget_recently_viewed_products ul.product_list_widget > li .product_title_link > a:hover,
+.widget_recent_reviews ul.product_list_widget > li .product_title_link > a:hover,
+.widget_top_rated_products ul.product_list_widget > li .product_title_link > a:hover,
+.widget_products ul.product_list_widget > li .product_title_link > a:hover { color: $regular_accent_color_1; }
+
+.chosen-container .chosen-results li { background: $invert_accent_color_1; }
+
+.chosen-container .chosen-results li + li { border-top: 1px solid $regular_accent_color_4; }
+
+.motoslider_wrapper .h1-after:after { background: $invert_text_color; }
+
+.motoslider_wrapper .ms_arrows .ms_prev,
+.motoslider_wrapper .ms_arrows .ms_next {
+	color: $invert_text_color;
+}
+
+.motoslider_wrapper .ms_arrows .ms_prev:hover,
+.motoslider_wrapper .ms_arrows .ms_next:hover {
+	background: $invert_text_color;
+	color: $regular_text_color;
+	border-color: $invert_text_color;
+}
+
+.motoslider_wrapper .ms_pagination .ms_bullet_wrapper .ms_bullet { background: $invert_text_color; }
+
+.motoslider_wrapper .ms_pagination .ms_bullet_wrapper .ms_bullet:before { background: $regular_accent_color_1; }
+
+.motoslider_wrapper .ms_pagination .ms_bullet_wrapper .ms_bullet:after { background: $regular_accent_color_1; }
+
+.motoslider_wrapper .ms_pagination .ms_bullet_wrapper .ms_bullet.ms_active,
+.motoslider_wrapper .ms_pagination .ms_bullet_wrapper .ms_bullet:hover { background: $regular_accent_color_1; }
+
+.subscribe-block__message,
+.follow-block__message {
+	font-family: $h3_font_family;
+	font-style: $h3_font_style;
+	font-weight: $h3_font_weight;
+	font-size: $h3_font_size{px};
+	line-height: $h3_line_height;
+	letter-spacing: $h3_letter_spacing{px};
+}
+
+.follow-block .social-list .menu-item a {
+	color: $regular_text_color;
+	border: 2px solid $regular_text_color;
+}
+
+.follow-block .social-list .menu-item a:hover {
+	background: $regular_text_color;
+	color: $invert_text_color;
+}
+
+.follow-block .social-list a:after {
+	background: $regular_accent_color_1;
+}
+
+.widget.widget_rss a,
+.widget.widget_rss .rssSummary { color: $invert_text_color; }
+
+.widget.widget_rss a:hover { color: $regular_accent_color_1; }
+
+.widget.widget_rss .rss-date { color: $regular_accent_color_1; }
+
+.sidebar .widget.widget_archive ul > li + li,
+.sidebar .widget.widget_categories ul > li + li,
+.sidebar .widget.widget_product_categories ul > li + li,
+.sidebar .widget.widget_pages ul > li + li,
+.sidebar .widget.widget_meta ul > li + li,
+.sidebar .widget.widget_rss ul > li + li,
+.sidebar .widget.widget_layered_nav ul > li + li,
+.sidebar .widget.widget_layered_nav_filters ul > li + li,
+.sidebar .widget.widget_rating_filter ul > li + li,
+.sidebar .widget.widget_nav_menu ul > li + li{
+	border-top: 1px dotted $regular_accent_color_4;
+}
+
+.sidebar .widget.widget_archive ul > li + li .children,
+.sidebar .widget.widget_categories ul > li + li .children,
+.sidebar .widget.widget_product_categories ul > li + li .children,
+.sidebar .widget.widget_pages ul > li + li .children,
+.sidebar .widget.widget_meta ul > li + li .children,
+.sidebar .widget.widget_rss ul > li + li .children,
+.sidebar .widget.widget_nav_menu ul > li + li .children{
+	border-top: 1px dotted $regular_accent_color_4;
+}
+
+.widget.widget_rating_filter ul li a:hover .star-rating span:before { color: $regular_accent_color_1; }
+
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content { background-color: @darken($regular_accent_color_4, 7.45); }
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle { background-color: $regular_accent_color_1; }
+
+.woocommerce .widget_price_filter .price_slider_amount { color: $regular_accent_color_1; }
+
+.widget_calendar .calendar_wrap caption,
+.widget_calendar .calendar_wrap thead th {
+	font-family: $h3_font_family;
+}
+
+.widget_calendar .calendar_wrap caption {
+	background: $regular_accent_color_1;
+}
+
+.widget_calendar .calendar_wrap thead th { color: $regular_text_color; }
+
+.widget_calendar .calendar_wrap tbody td a {
+	border: 1px solid @darken($regular_accent_color_4, 26.67);
+	color: $regular_text_color;
+}
+
+.widget_calendar .calendar_wrap tbody td a:hover {
+	border: 1px solid @darken($regular_accent_color_4, 60);
+	background: @darken($regular_accent_color_4, 60);
+	color: $invert_accent_color_1;
+}
+
+.widget_calendar .calendar_wrap #prev,
+.widget_calendar .calendar_wrap #next { font-family: $h3_font_family; }
+
+.widget_calendar .calendar_wrap #prev a,
+.widget_calendar .calendar_wrap #next a { color: @darken($regular_accent_color_4, 23.92); }
+
+.widget_calendar .calendar_wrap #prev a:hover,
+.widget_calendar .calendar_wrap #next a:hover { color: $regular_text_color; }
+
+.widget_calendar .calendar_wrap tfoot:before { background: $regular_accent_color_4; }
+
+.widget_calendar .calendar_wrap {
+	border-left: 1px solid $regular_accent_color_4;
+	border-right: 1px solid $regular_accent_color_4;
+	border-bottom: 1px solid $regular_accent_color_4;
+}
+
+.tm_custom_menu_widget { border: 5px solid $regular_accent_color_4; }
+
+.sidebar .widget .chosen-container,
+.footer-area .widget .chosen-container { border: 1px solid $regular_accent_color_4; }
+
+.sidebar .widget.wcj_widget_multicurrency > a + br + a
+	{ border-top: 1px solid $regular_accent_color_4; }
+
+.tm_about_store_widget {
+	background: $invert_accent_color_3;
+}
+
+.tm_about_store_widget span { color: $regular_accent_color_1; }
+
+.widget.widget_archive ul .children,
+.widget.widget_categories ul .children,
+.widget.widget_product_categories ul .children,
+.widget.widget_pages ul .children,
+.widget.widget_meta ul .children,
+.widget.widget_rss ul .children,
+.widget.widget_layered_nav ul .children,
+.widget.widget_layered_nav_filters ul .children,
+.widget.widget_rating_filter ul .children,
+.widget.widget_nav_menu ul .children,
+.widget.widget_nav_menu .sub-menu li {
+	border-top: 1px solid $regular_accent_color_4;
+}
+
+.tm-products-smart-box-widget__rd-material-tabs { border: 1px solid $regular_accent_color_4; }
+
+.tm-products-smart-box-widget__rd-material-tabs .rd-material-tab > .row > .col-lg-4 { border-left: 1px solid $regular_accent_color_4; }
+
+@media (min-width: 768px) {
+	.tm_products_smart_box_widget .tm-products-smart-box-widget__rd-material-tabs__list .rd-material-tabs__stage .rd-material-tab + .rd-material-tab { border-top: 1px dotted $regular_accent_color_4; }
+}
+.tm_products_smart_box_widget .rd-material-tabs__stage .rd-material-tab .col-xl-8 .product .widget-product-title { color: $regular_text_color; }
+
+.tm_products_smart_box_widget .rd-material-tabs__stage .rd-material-tab .col-xl-8 .product .widget-product-title:hover { color: $regular_accent_color_1; }
+
+.sidebar .widget.widget_archive ul > li a:before,
+.sidebar .widget.widget_categories ul > li a:before,
+.sidebar .widget.widget_product_categories ul > li a:before,
+.sidebar .widget.widget_pages ul > li a:before,
+.sidebar .widget.widget_meta ul > li a:before,
+.sidebar .widget.widget_rss ul > li a:before,
+.sidebar .widget.widget_layered_nav ul > li a:before,
+.sidebar .widget.widget_layered_nav_filters ul > li a:before,
+.sidebar .widget.widget_rating_filter ul > li a:before,
+.sidebar .widget.widget_nav_menu ul > li a:before,
+.footer-area .widget.widget_archive ul > li a:before,
+.footer-area .widget.widget_categories ul > li a:before,
+.footer-area .widget.widget_product_categories ul > li a:before,
+.footer-area .widget.widget_pages ul > li a:before,
+.footer-area .widget.widget_meta ul > li a:before,
+.footer-area .widget.widget_rss ul > li a:before,
+.footer-area .widget.widget_layered_nav ul > li a:before,
+.footer-area .widget.widget_layered_nav_filters ul > li a:before,
+.footer-area .widget.widget_rating_filter ul > li a:before,
+.footer-area .widget.widget_nav_menu ul > li a:before { color: $regular_accent_color_1; }
+
+.banner__hover-1 { background-color: $regular_accent_color_2; }
+.banner__hover-1:before { border-color: $regular_accent_color_2 transparent transparent transparent;}
+
+.banner__hover-2 { background: $regular_accent_color_1; }
+.banner__hover-2:before { border-color: $regular_accent_color_1 transparent transparent transparent;}
+.banner__hover{
+	border-color: $regular_accent_color_1!important;
+}
+.banner__hover-3 { background-color: $regular_text_color; }
+.banner__hover-3:before { border-color: $regular_text_color transparent transparent transparent;}
+
+.banner__hover-4 {
+	background-color: $regular_accent_color_3;
+	}
+.banner__hover-4 h1, .banner__hover-4 h2{
+	color:$invert_text_color;
+}
+.banner__hover-4:before{
+	border-color: $regular_accent_color_3 transparent transparent transparent
+}
+
+.h1-number{
+	color:$regular_accent_color_1;
+}
+.button_sec.button_sec{
+	background-color: $regular_h1_color;
+	color:$invert_accent_color_1;
+}
+.button_sec.button_sec:hover{
+	background-color: $regular_accent_color_2;
+}
+.ms_button_layer{
+	background-color: $regular_accent_color_1;
+	color:$invert_accent_color_1;
+}
+.ms_button_layer:hover{
+	background-color: $regular_accent_color_2;
+}
+.ms_button_layer{
+	border-color: $invert_text_color;
+	color: $invert_text_color;
+}
+.ms_button_layer:hover{
+	border-color: $regular_accent_color_1;
+	color: $invert_text_color;
+	background-color: $regular_accent_color_1;
+}
+h2.widget-title, h3.widget-title, .related h2{
+	background-color: $regular_text_color;
+	color:$invert_text_color;
+}
+h2.widget-title:before, h3.widget-title:before, .related h2:before{
+	border-color: $regular_text_color transparent transparent transparent;
+}
+.subscribe-block h1.widget-title{
+	font-size: $h2_font_size{px};
+}

@@ -1,0 +1,35 @@
+.site-logo {
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	display: inline-block;
+
+	&__link {
+		text-decoration: none;
+
+		&:focus {
+			outline: none;
+		}
+		img{
+			@media (max-width: 767px) {
+				margin-top: 7px;
+			}
+		}
+	}
+}
+
+.site-description {
+	vertical-align: top;
+	display: block;
+	font-size: 14px;
+
+	@include media-breakpoint-up(md) {
+		vertical-align: middle;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.site-branding {
+		text-align: center;
+	}
+}

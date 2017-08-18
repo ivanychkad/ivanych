@@ -1,0 +1,14 @@
+.clear,
+.comment-body,
+.entry-content,
+.entry-footer,
+.comment-content,
+.site-header,
+.site-content,
+.site-footer {
+	@include clearfix-wootheme;
+}
+
+.hidden {
+	display: none;
+}

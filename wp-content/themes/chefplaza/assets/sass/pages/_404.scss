@@ -1,0 +1,40 @@
+.not-found {
+	margin-bottom: 4em;
+	text-align: center;
+
+	@include media-breakpoint-up(lg) {
+		margin-bottom: 7.8em;
+	}
+
+	.page-title {
+		margin-top: 8px;
+		margin-bottom: 0;
+		@include font-size(140);
+
+		@include media-breakpoint-up(sm) {
+			@include font-size(250);
+		}
+		@include media-breakpoint-up(md) {
+			@include font-size(300);
+		}
+	}
+
+	.page-content {
+		margin-top: 2px;
+	}
+
+	h1 {
+		margin-bottom: 1.15em;
+	}
+
+	h5 {
+		margin-bottom: 1.44em;
+	}
+
+	.search-form,
+	.woocommerce-product-search {
+		max-width: 455px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

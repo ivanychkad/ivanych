@@ -1,0 +1,112 @@
+/* #Main Menu */
+.main-navigation .menu > li > a { color: $regular_text_color; }
+
+.main-navigation .menu > li > a:hover,
+.main-navigation .menu > li.menu-hover> a,
+.main-navigation .menu > li.current_page_item > a,
+.main-navigation .menu > li.current_page_ancestor > a,
+.main-navigation .menu > li.current-menu-item > a,
+.main-navigation .menu > li.current-menu-ancestor > a { color: $regular_accent_color_1; }
+
+.main-navigation .menu > li:after { background: $regular_accent_color_1 }
+
+.main-navigation .sub-menu { background: $regular_accent_color_1; }
+
+.main-navigation .sub-menu .sub-menu { background: $regular_text_color; }
+
+.main-navigation .sub-menu .sub-menu .sub-menu{ background: $regular_accent_color_1; }
+
+.main-navigation ul ul a { color: $invert_accent_color_1; }
+
+.main-navigation .sub-menu > li > a:hover,
+.main-navigation .sub-menu > li.menu-hover> a,
+.main-navigation .sub-menu > li.current_page_item > a,
+.main-navigation .sub-menu > li.current_page_ancestor > a,
+.main-navigation .sub-menu > li.current-menu-ancestor > a { color: $regular_accent_color_2; }
+
+
+.main-navigation .menu >li >.sub-menu > li >.sub-menu > li > a:hover{
+    color: $regular_accent_color_5;
+}
+
+.main-navigation .menu >li>.sub-menu > li >.sub-menu >li.menu-hover > a{
+    color: $regular_accent_color_5;
+}
+
+li.menu-item-has-children.menu-hover:hover:after{
+    color:$regular_text_color;
+}
+
+.main-navigation .sub-menu > li.current-menu-item > a{
+    color: $regular_accent_color_2;
+}
+.menu-item__desc { color: @darken($regular_accent_color_4, 25.88); }
+
+.main-navigation .sub-menu li.menu-item-has-children:after { color: $invert_accent_color_1 }
+
+/* NavBar */
+.rd-mobilepanel,
+.rd-mobilemenu_ul > li a,
+.rd-mobilemenu_ul .rd-submenu-toggle,
+.rd-mobilemenu_ul .rd-submenu-toggle:hover,
+.rd-mobilemenu_ul > li a.rd-with-ul .rd-submenu-toggle,
+.rd-mobilemenu_ul > li a.rd-with-ul:hover .rd-submenu-toggle { color: $regular_text_color; }
+
+.rd-mobilepanel {
+	background: $top_panel_bg;
+	border-bottom: 1px solid $regular_accent_color_4;
+}
+
+.rd-mobilepanel_toggle span:after,
+.rd-mobilepanel_toggle span:before,
+.rd-mobilepanel_toggle span { background: $regular_text_color; }
+
+.navbar-search-toggle:before,
+.navbar-search-toggle:after,
+.navbar-search-toggle{ color: $regular_text_color; }
+
+@media (max-width: 767px) {
+	.site-header .top-panel__wrap .widget_product_search form.navbar-search button,
+	.site-header .top-panel__wrap .widget_product_search form.navbar-search button i {
+		color: $invert_text_color;
+	}
+}
+
+.rd-mobilemenu_ul{ background: $invert_text_color; }
+
+.rd-mobilemenu_ul .current_page_item a,
+.rd-mobilemenu_ul .current-menu-item a,
+.rd-mobilemenu_ul a:hover,
+.rd-mobilemenu_ul .current_page_item.rd-mobile-menu-shop a,
+.rd-mobilemenu_ul .rd-mobilemenu_submenu li a:hover,
+.rd-mobilemenu_ul .rd-mobilemenu_submenu li.current-menu-item a,
+.rd-mobilemenu_ul .rd-mobilemenu_submenu li.current-menu-item.menu-item a,
+.rd-mobilemenu_ul .rd-mobile-menu-shop a:hover{ color: $regular_accent_color_1; }
+
+.rd-mobilemenu_ul .rd-mobilemenu_submenu li a,
+.rd-mobilemenu_ul .rd-mobilemenu_submenu li.menu-item { color: $regular_text_color; }
+
+.rd-mobilemenu_ul .rd-mobilemenu_submenu li a:not([href]) { color: $regular_text_color; }
+
+.rd-mobilemenu_ul .rd-mobile-menu-shop a:not([href]) { color: $regular_text_color; }
+
+.rd-mobilemenu_ul .rd-mobile-menu-shop a { color: $regular_text_color; }
+
+.top-panel__menu-list.rd-mobile-menu-shop { background: @darken( $invert_accent_color_1, 5.1); }
+
+.top-panel__menu-list.rd-mobile-menu-shop li a,
+.top-panel__menu-list.rd-mobile-menu-shop li a { color: $regular_text_color; }
+
+.top-panel__menu-list.rd-mobile-menu-shop li.current-menu-item a,
+.top-panel__menu-list.rd-mobile-menu-shop li.current_page_item a,
+.top-panel__menu-list.rd-mobile-menu-shop li a:hover { color: $regular_accent_color_1; }
+
+#lang_sel.rd-mobile-lang { color: $regular_text_color; }
+
+#lang_sel.rd-mobile-lang ul > li > a:after { color: $regular_text_color; }
+
+#lang_sel.rd-mobile-lang ul li a:hover{ color: $regular_accent_color_1; }
+
+/* #Footer Menu */
+.footer-menu__items li.current-menu-item a,
+.footer-menu__items li.current_page_item a { color: $regular_text_color; }

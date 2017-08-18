@@ -1,0 +1,81 @@
+div.wpcf7 {
+	margin-top: 32px;
+	margin-bottom: 30px;
+
+	em {
+		margin-bottom: 14px;
+		display: inline-block;
+		@include font-size(16);
+		font-style: normal;
+	}
+
+	p {
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+
+	.wpcf7-form-control-wrap {
+		position: relative;
+		display: block;
+
+		input {
+			width: 100%;
+			@include font-size(16);
+			padding: 10px 20px;
+		}
+
+		.wpcf7-not-valid-tip {
+			position: absolute;
+			top: -37px;
+			right: 0;
+		}
+	}
+
+	textarea {
+		min-height: 153px;
+		height: 203px;
+		max-height: 253px;
+		margin-bottom: 17px;
+		@include font-size(16);
+	}
+
+	input[type='submit'] {
+		margin-top: 25px;
+		margin-bottom: 51px;
+		padding: 17px 25px;
+	}
+
+	img.ajax-loader {
+		width: 16px;
+		margin-top: 7px;
+		margin-left: 8px;
+	}
+
+	.wpcf7-not-valid {
+		border-color: $not__valis;
+		background: $not__valid-bg;
+	}
+
+	.wpcf7-not-valid-tip {
+		color: $not__valis;
+		@include font-size(16);
+		font-weight: 400;
+	}
+
+	.wpcf7-validation-errors, .wpcf7-mail-sent-ng, .wpcf7-mail-sent-ok {
+		margin: 51px 0;
+		padding: 13px 22px;
+		color: $color__white;
+		border: none;
+		@include font-size(16);
+		font-weight: 400;
+	}
+
+	.wpcf7-validation-errors, .wpcf7-mail-sent-ng {
+		background: $error__valid;
+	}
+
+	.wpcf7-mail-sent-ok {
+		background: $sacsses;
+	}
+}

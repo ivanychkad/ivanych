@@ -1,0 +1,51 @@
+/* #Carousel */
+
+.swiper-slide:hover { background-color: @alpha( $regular_accent_color_1, 10 ); }
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: $invert_text_color;
+	background-color: $regular_text_color;
+}
+
+.swiper-pagination-bullet { background: $regular_accent_color_1; }
+
+.swiper-pagination-bullet:before { background: $regular_accent_color_1; }
+
+.swiper-pagination-bullet:after { background: $regular_accent_color_4; }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active,
+.swiper-pagination-bullet:hover { background: $regular_accent_color_1; }
+
+.swiper-slide .inner {
+	border: 3px solid $regular_accent_color_4;
+
+}
+
+@media (min-width: 544px) {
+	.swiper-slide .inner {
+		border: 5px solid $regular_accent_color_4;
+	}
+}
+
+.swiper-slide .inner .post__date time {
+	color: $regular_accent_color_1;
+	font-family: $h2_font_family;
+	font-weight: $h2_font_weight;
+}
+
+.swiper-slide .inner .post__date time span { color: $regular_accent_color_1; }
+.swiper-slide .inner .post__date time span:before{
+	background-color: $regular_text_color;
+}
+
+.swiper-slide .inner .entry-header a { color: $regular_text_color; }
+
+.swiper-slide .inner .entry-header a:hover { color: $regular_accent_color_1; }
+
+.swiper-slide .post-thumbnail__link:before {
+	background: $regular_accent_color_2;
+}
+.post__date time{
+	background: $invert_text_color;
+}

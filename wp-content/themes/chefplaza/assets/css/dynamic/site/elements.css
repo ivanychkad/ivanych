@@ -1,0 +1,65 @@
+/* #Elements */
+blockquote {
+	color: $regular_text_color;
+}
+
+blockquote:before {
+	font-family: $h2_font_family;
+	color: $regular_accent_color_1;
+}
+
+blockquote i,
+blockquote cite {
+	color: $regular_accent_color_1;
+}
+
+code {
+	color: @darken( $regular_text_color, 15% );
+	background: $invert_text_color;
+}
+
+hr { background: $regular_accent_color_4; }
+
+mark,
+ins {
+	background: $regular_accent_color_1;
+	color: $invert_accent_color_1;
+}
+
+ul li,
+ol li {
+	font-family: $h5_font_family;
+	font-style: $h5_font_style;
+	font-weight: $h5_font_weight;
+	font-size: @font_size( $body_font_size[size], multiple, round, .59 )px;
+	line-height: $h5_line_height;
+	letter-spacing: $h5_letter_spacing{px};
+	color: $regular_accent_color_1;
+}
+
+@media (min-width: 544px) {
+	ul li,
+	ol li {
+		font-size: @font_size($h5_font_size, multiple, ceil, 1)px;
+	}
+}
+
+ul li a,
+ol li a,
+ul li a:not([href]):hover,
+ol li a:not([href]):hover { color: $regular_accent_color_1; }
+
+ul li a:hover,
+ol li a:hover { color: $regular_text_color; }
+
+.chosen-container a,
+.chosen-container .active-result { color: $regular_text_color; }
+
+.chosen-container a:hover,
+.chosen-container .active-result:hover  { color: $regular_link_color; }
+
+.breadcrumbs__title { border-right: 1px solid $regular_accent_color_4; }
+
+.not-found .page-title {
+	color: $regular_accent_color_1;
+}

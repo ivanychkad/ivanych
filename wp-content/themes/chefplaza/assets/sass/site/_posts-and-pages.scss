@@ -1,0 +1,411 @@
+.page-content,
+.post .entry-content,
+.entry-summary {
+	margin: 10px 0 0;
+
+	@include media-breakpoint-up(sm) {
+		margin: 29px 0 0;
+	}
+}
+
+.page-content {
+	@include media-breakpoint-up(xl) {
+		margin: 60px 0 0;
+	}
+}
+
+/*--------------------------------------------------------------
+### Hentry (WordPress native CSS-class for post/page article)
+--------------------------------------------------------------*/
+.hentry,
+#container,
+.card {
+	position: relative;
+	margin: 0 0 15px;
+	padding: 15px 0 20px;
+
+	@include media-breakpoint-up(sm) {
+		margin: 0 0 44px;
+		padding: 41px 0 55px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		margin: 0 0 64px;
+		padding: 61px 0 70px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&.page {
+		margin-bottom: 0;
+
+		&:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	&.post {
+		margin: 0 0 -1px;
+	}
+
+	.home.page & {
+		padding: 0;
+	}
+
+	.woocommerce-cart &,
+	.woocommerce-checkout & {
+		padding-top: 0;
+	}
+
+	.single.single-post & {
+		padding-bottom: 35px;
+		margin-bottom: 0;
+	}
+}
+
+.home {
+	.site-content > .full-width-header-area + .container {
+		margin-top: 0;
+	}
+
+	.site-content > .container {
+		margin-top: 30px;
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 70px;
+		}
+	}
+}
+
+.search-results {
+	.card {
+		padding: 15px 0 20px;
+
+		@include media-breakpoint-up(sm) {
+			padding: 41px 0 55px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding: 61px 0 70px;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+### Entry (header, content, footer)
+--------------------------------------------------------------*/
+.entry {
+	&-title {
+		margin-bottom: 8px;
+
+		@include media-breakpoint-up(sm) {
+			margin-bottom: 18px;
+		}
+
+		&:first-child {
+			.entry-header & {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&-header {
+		margin-bottom: 0;
+
+		.entry-meta {
+			margin-bottom: 15px;
+
+			@include media-breakpoint-up(sm) {
+				margin-bottom: 50px;
+			}
+		}
+
+		.home & {
+			margin-bottom: 0;
+		}
+	}
+
+	&-meta {
+		&,
+		&-bottom {
+			> * {
+				display: inline-block;
+				margin-right: 3px;
+
+				a {
+					display: inline-block;
+				}
+
+				+ * {
+					&:before {
+						content: '\2022';
+						margin-right: 9px;
+						font-size: .875em;
+					}
+
+					&.post-terms:before {
+						content: '';
+					}
+				}
+			}
+		}
+
+		* + & {
+			margin-top: 8px;
+
+			@include media-breakpoint-up(sm) {
+				margin-top: 18px;
+			}
+		}
+
+		&-bottom {
+			* + & {
+				margin-top: 7px;
+			}
+
+			.single * + & {
+				margin-top: 0;
+			}
+		}
+
+		.entry-summary + &,
+		.entry-content + & {
+			margin-top: 1em;
+		}
+	}
+	&-summary,
+	&-content {
+		overflow: hidden;
+
+		.post-list__item & {
+			margin-top: 0;
+			p {
+				margin: 1em 0 0;
+			}
+		}
+	}
+	&-footer {
+		position: relative;
+		margin-top: 15px;
+		clear: both;
+
+		.btn {
+			margin-top: 15px;
+		}
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 31px;
+
+			.btn {
+				float: right;
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+### Post attributes (thumbnail, meta)
+--------------------------------------------------------------*/
+.post {
+	&-thumbnail {
+		&__link {
+			&.post-thumbnail--small {
+				display: inline-block;
+
+				@include media-breakpoint-up(xl) {
+					float: left;
+					margin-right: 30px;
+					margin-bottom: 30px;
+				}
+			}
+		}
+
+		&__img {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		&--fullwidth {
+			.posts-list & {
+				display: block;
+				margin-bottom: 1em;
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 1.5em;
+				}
+			}
+		}
+	}
+
+	&__cats {
+		.post-thumbnail--fullwidth + & {
+			.has-post-thumbnail & {
+				position: absolute;
+				z-index: 99;
+				top: 10px;
+				left: 10px;
+
+				@include media-breakpoint-up(lg) {
+					top: 30px;
+				}
+			}
+		}
+
+		.post-format-wrap & {
+			position: absolute;
+			z-index: 99;
+			top: 10px;
+			left: 10px;
+
+			@include media-breakpoint-up(lg) {
+				top: 30px;
+				left: 30px;
+			}
+		}
+	}
+
+	&__cats,
+	&__tags {
+		a {
+			&:after {
+				content: ',';
+			}
+
+			&:last-child {
+				&:after {
+					content: '';
+				}
+			}
+		}
+	}
+	&-list__item-content {
+		.entry-content {
+			p {
+				margin: 10px 0;
+			}
+		}
+	}
+
+	&.post_format-post-format-image .post-thumbnail__link,
+	.post-gallery__link {
+		position: relative;
+		display: block;
+		height: 100%;
+
+		&:before {
+			content: '\e8b6';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-family: 'Material Icons';
+			width: 50px;
+			height: 50px;
+			font-size: 32px;
+			line-height: 50px;
+			border-radius: 50%;
+			text-align: center;
+			transition: all .3s ease;
+			@include transform(translate(-50%, -50%) scale(0));
+
+			@include media-breakpoint-up(md) {
+				width: 92px;
+				height: 92px;
+				font-size: 53px;
+				line-height: 94px;
+			}
+		}
+
+		&:hover {
+			&:before {
+				@include transform(translate(-50%, -50%) scale(1));
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+### Read More button
+--------------------------------------------------------------*/
+.single {
+	.entry-content {
+		margin-top: 9px;
+	}
+
+	.entry-footer {
+		margin-top: 15px;
+	}
+
+	.hentry {
+		margin-bottom: 35px;
+	}
+}
+
+.posts-list--grid-2-cols,
+.posts-list--grid-3-cols,
+.posts-list--masonry-2-cols,
+.posts-list--masonry-3-cols {
+	@include media-breakpoint-up(lg) {
+		.post-thumbnail,
+		.post-format-wrap,
+		.post-content-video {
+			* + .sticky__label {
+				top: 20px;
+				left: 20px;
+			}
+		}
+
+		.post-content-video * + .sticky__label {
+			top: 40px;
+			left: 20px;
+		}
+	}
+
+	.format-quote .post-quote {
+		padding: 29px 0 33px;
+		text-align: center;
+
+		.post-format-quote {
+			margin: 0;
+			padding: 2.818181818181818em .9090909090909091em 0;
+
+			&:before {
+				right: 0;
+				left: 0;
+			}
+
+			i,
+			cite {
+				margin-top: .9090909090909091em;
+			}
+
+			@include media-breakpoint-up(md) {
+				padding: 3.181818181818182em 3.409090909090909em .4em 2.681818181818182em;
+			}
+		}
+	}
+}
+
+.mfp-wrap .mfp-close {
+	top: 34px !important;
+	right: 0 !important;
+}
+
+button.mfp-close:hover { background: transparent; }
+
+.home .hentry { border-top: none; }
+
+.woocommerce-cart .hentry,
+.woocommerce-cart .card { border-top: none; }
+
+.woocommerce-checkout .breadcrumbs ~ * .hentry { border-top: none; }
+
+.comment-list > .comment > .children .comment-body { border: none; }
+
+/*--------------------------------------------------------------
+### Sticky Post
+--------------------------------------------------------------*/
+@import "sticky";

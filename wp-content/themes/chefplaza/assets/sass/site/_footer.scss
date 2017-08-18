@@ -1,0 +1,60 @@
+.footer-container {
+	.container & {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+.footer-copyright {
+	@include font-size(14);
+	line-height: 1.72;
+
+	.sitename {
+		text-transform: uppercase;
+	}
+	
+	@include media-breakpoint-down(xs) {
+		text-align: left;
+	}
+}
+
+.widget-area.footer-area {
+	@include align-items(flex-start);
+
+	.widget {
+		margin-bottom: 57px;
+	}
+
+	p {
+		@include font-size(14);
+		line-height: 2.57;
+	}
+
+	@include media-breakpoint-down(xs) {
+		text-align: center;
+
+		.widget {
+			margin-bottom: 10px;
+
+			.widget-title {
+				text-align: center;
+			}
+
+			&.widget_layered_nav,
+			&.widget_categories,
+			&.widget_product_categories {
+				ul li {
+					@include justify-content(center);
+				}
+			}
+		}
+	}
+}
+.footer-text-center {
+	text-transform: uppercase;
+}
+
+
+@import "footer/layout-default";
+@import "footer/layout-centered";
+@import "footer/layout-minimal";

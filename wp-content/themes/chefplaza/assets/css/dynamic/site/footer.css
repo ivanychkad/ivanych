@@ -1,0 +1,36 @@
+/* #Footer */
+.site-footer { background-color: $footer_bg; }
+
+.footer-area-wrap { background-color: $footer_widgets_bg; }
+
+.site-info a:hover { color: $regular_text_color; }
+
+.footer-text-center {
+	font-family: $h4_font_family;
+	font-style: $h3_font_style;
+	font-weight: $h3_font_weight;
+	font-size: @font_size($h3_font_size, multiple, ceil, .6)px;
+	line-height: $h3_line_height;
+	letter-spacing: $h3_letter_spacing{px};
+}
+
+@media (min-width: 544px) {
+	.footer-text-center {
+		font-size: @font_size($h3_font_size, multiple, ceil, 0.7)px;
+	}
+}
+
+.footer-copyright { color: $regular_text_color; }
+
+.footer-copyright a:hover{ color: $regular_accent_color_3; }
+
+.site-footer.centered .footer-text-center{
+	color:$regular_text_color;
+}
+
+.site-footer.default .footer-area-wrap h3.widget-title{
+	color:$regular_text_color;
+}
+.footer-area .follow-block .widget-title{
+	font-size: $h3_font_size{px};
+}

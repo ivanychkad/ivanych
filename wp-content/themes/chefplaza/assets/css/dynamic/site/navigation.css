@@ -1,0 +1,76 @@
+/* #Paginations */
+.pagination .page-numbers,
+.woocommerce nav.woocommerce-pagination ul li .page-numbers,
+.pagination .page-numbers:focus,
+.woocommerce nav.woocommerce-pagination ul li .page-numbers:focus {
+	font-family: $h3_font_family;
+	font-style: $h3_font_style;
+	font-size: @font_size( $h3_font_size[size], multiple, round, 1 )px;
+	color: $regular_text_color;
+}
+
+.pagination a.page-numbers:hover,
+.pagination span.page-numbers.current,
+.woocommerce nav.woocommerce-pagination ul li .page-numbers:hover,
+.woocommerce nav.woocommerce-pagination ul li .page-numbers.current {
+	color: $regular_accent_color_1;
+}
+
+.pagination .page-numbers .material-icons{
+	font-size: @font_size( $h2_font_size[size], multiple, round, 1.05 )px;
+}
+
+.pagination .page-numbers.next,
+.pagination .page-numbers.prev,
+.woocommerce nav.woocommerce-pagination ul li .page-numbers.next,
+.woocommerce nav.woocommerce-pagination ul li .page-numbers.prev {
+	color: $regular_text_color;
+	border: 3px solid $regular_accent_color_4;
+}
+
+.pagination .page-numbers.next:hover,
+.pagination .page-numbers.prev:hover,
+.woocommerce nav.woocommerce-pagination ul li .page-numbers.next:hover,
+.woocommerce nav.woocommerce-pagination ul li .page-numbers.prev:hover {
+	color: $regular_accent_color_1;
+	border: 3px solid $regular_accent_color_4;
+}
+
+.bne-testimonial-slider.bne-flexslider .flex-control-nav li a{
+	border: 3px solid $regular_text_color_4 !important;
+}
+
+.bne-testimonial-slider.bne-flexslider .flex-control-nav li a:hover,
+.bne-testimonial-slider.bne-flexslider .flex-control-nav li a.flex-active{
+	background: $regular_accent_color_1;
+	border: 3px solid $regular_accent_color_1 !important;
+}
+
+.bne-testimonial-slider.bne-flexslider .flex-direction-nav a.flex-prev:hover,
+.bne-testimonial-slider.bne-flexslider .flex-direction-nav a.flex-next:hover {
+	border: 1px solid $regular_accent_color_1 !important;
+}
+
+/* #Breadcrumbs */
+.breadcrumbs__item {
+	font-style: $breadcrumbs_font_style;
+	font-weight: $breadcrumbs_font_weight;
+	font-size: $breadcrumbs_font_size{px};
+	line-height: $breadcrumbs_line_height;
+	font-family: @font_family( $breadcrumbs_font_family );
+	letter-spacing: $breadcrumbs_letter_spacing{px};
+}
+
+
+.breadcrumbs__item {
+	color: $regular_accent_color_1;
+}
+
+.breadcrumbs__item a,
+.breadcrumbs__item-sep {
+	color: $regular_accent_color_5;
+}
+
+.breadcrumbs__item a:hover {
+	color: $regular_accent_color_1;
+}

@@ -1,0 +1,24 @@
+.top-panel__menu {
+	&-list {
+		text-align: center;
+
+		.menu-item {
+			display: inline-block;
+			a {
+				position: relative;
+				display: inline-block;
+			}
+
+			+ li {
+				margin-left: 10px;
+			}
+
+			&.current-menu-item,
+			&.current_page_item {
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

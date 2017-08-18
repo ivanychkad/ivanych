@@ -1,0 +1,54 @@
+p {
+	margin: 1.454545454545455em 0;
+
+	.page .entry-content &, .entry-content & {
+		overflow: hidden;
+	}
+
+	+ h2 {
+		margin-top: 57px;
+	}
+
+	+ h3 {
+		margin-top: 48px;
+	}
+
+	+ h4 {
+		margin-top: 42px;
+	}
+
+	+ h5 {
+		margin-top: 45px;
+	}
+
+	+ h6 {
+		margin-top: 46px;
+	}
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	@include font-size(.9375, rem);
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted $color__border;
+	cursor: help;
+}
+
+mark, ins {
+	text-decoration: none;
+	padding: 0 5px;
+}
+
+big {
+	font-size: 125%;
+}

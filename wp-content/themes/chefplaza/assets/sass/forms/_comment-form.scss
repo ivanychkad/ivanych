@@ -1,0 +1,66 @@
+.comment {
+	&-form {
+		max-width: 570px;
+
+		label {
+			display: block;
+			margin-bottom: 14px;
+			@include font-size(14);
+
+			@include media-breakpoint-up(sm) {
+				@include font-size(16);
+			}
+		}
+
+		&-comment,
+		&-author,
+		&-email,
+		&-url {
+			margin: 12px 0 0 0;
+		}
+
+		.form-submit {
+			margin: 15px 0 0 0;
+
+			.comment-list & {
+				padding-bottom: 30px;
+			}
+
+			@include media-breakpoint-up(sm) {
+				margin: 50px 0 0 0;
+			}
+		}
+
+		&__field {
+			width: 100%;
+			vertical-align: top;
+		}
+
+		.logged-in-as,
+		.comment-notes {
+			margin: 1.2em 0;
+			@include font-size(14);
+
+			@include media-breakpoint-up(sm) {
+				@include font-size(16);
+			}
+		}
+
+		.comment-list & {
+			padding-bottom: 2em;
+		}
+
+		span.for_rating {
+			font-style: italic;
+			font-weight: 300;
+		}
+
+		p.stars {
+			display: inline-block;
+		}
+	}
+}
+
+#cancel-comment-reply-link {
+	@include font-size(0.75, rem);
+}
