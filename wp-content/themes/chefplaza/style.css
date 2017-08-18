@@ -4181,7 +4181,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 --------------------------------------------------------------*/
 /* Basic */
 .main-navigation > ul > li a {
-  padding-bottom: 26px;
+  padding-bottom: 30px;
 }
 
 .main-navigation > ul > li + li {
@@ -4190,13 +4190,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 @media (min-width: 992px) {
   .main-navigation > ul > li a {
-    padding-bottom: 41px;
+    padding-bottom: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .main-navigation > ul > li a {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 
