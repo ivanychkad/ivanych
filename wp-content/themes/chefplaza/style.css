@@ -15754,7 +15754,8 @@ div.single-image-container {
 
 @media (min-width: 992px) {
   .single-image-container {
-    margin-bottom: 45px;
+    /*margin-bottom: 45px;*/
+    margin-bottom: 0px;
   }
 }
 
@@ -16336,4 +16337,8 @@ body .woocommerce-message {
 
 .woocommerce div.product .woocommerce-tabs ul.tabs:before{
   border:none;
+}
+
+.woocommerce div.product div.images, .woocommerce div.product div.summary{
+  margin-bottom: 0em;
 }
