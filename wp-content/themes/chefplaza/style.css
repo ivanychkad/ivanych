@@ -409,7 +409,7 @@ h6 + p {
 }
 
 p {
-  margin: 0.454545454545455em 0;
+  margin: 0.454545454545455em;
 }
 
 .page .entry-content p, .entry-content p {
@@ -13861,7 +13861,8 @@ object {
 @media (min-width: 544px) {
   .woocommerce .product_title_single {
     font-size: 32px;
-    font-size: 2rem;
+    /*font-size: 2rem;*/
+    font-size: 1.2rem;
     /*margin-bottom: 23px;*/
     margin-bottom: 5px;
   }
@@ -13870,7 +13871,8 @@ object {
 @media (min-width: 768px) {
   .woocommerce .product_title_single {
     font-size: 40px;
-    font-size: 2.5rem;
+    /*font-size: 2.5rem;*/
+    font-size: 1.6rem;
   }
 }
 
@@ -16349,4 +16351,8 @@ body .woocommerce-message {
 
 .woocommerce div.product div.images, .woocommerce div.product div.summary{
   margin-bottom: 0em;
+}
+
+.woocommerce-tabs p {
+  font-size: 0.9em;
 }
