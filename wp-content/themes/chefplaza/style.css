@@ -7951,9 +7951,6 @@ header .sticky__label {
   .widget-area .widget-title {
     margin-bottom: 55px;
   }
-  .footer-area .widget.widget_product_categories ul > li .children li {
-    margin-left: 0px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -8079,20 +8076,6 @@ header .sticky__label {
   padding-top: 0px;
 }
 
-.sidebar .widget.widget_archive ul > li .children li, .sidebar .widget.widget_categories ul > li .children li, .sidebar .widget.widget_product_categories ul > li .children li, .sidebar .widget.widget_pages ul > li .children li, .sidebar .widget.widget_meta ul > li .children li, .sidebar .widget.widget_rss ul > li .children li, .sidebar .widget.widget_layered_nav ul > li .children li, .sidebar .widget.widget_layered_nav_filters ul > li .children li, .sidebar .widget.widget_rating_filter ul > li .children li, .sidebar .widget.widget_nav_menu ul > li .children li,
-.footer-area .widget.widget_archive ul > li .children li,
-.footer-area .widget.widget_categories ul > li .children li,
-.footer-area .widget.widget_product_categories ul > li .children li,
-.footer-area .widget.widget_pages ul > li .children li,
-.footer-area .widget.widget_meta ul > li .children li,
-.footer-area .widget.widget_rss ul > li .children li,
-.footer-area .widget.widget_layered_nav ul > li .children li,
-.footer-area .widget.widget_layered_nav_filters ul > li .children li,
-.footer-area .widget.widget_rating_filter ul > li .children li,
-.footer-area .widget.widget_nav_menu ul > li .children li {
-  margin-left: 0px;
-}
-
 .sidebar .widget.widget_archive ul > li .children li a, .sidebar .widget.widget_categories ul > li .children li a, .sidebar .widget.widget_product_categories ul > li .children li a, .sidebar .widget.widget_pages ul > li .children li a, .sidebar .widget.widget_meta ul > li .children li a, .sidebar .widget.widget_rss ul > li .children li a, .sidebar .widget.widget_layered_nav ul > li .children li a, .sidebar .widget.widget_layered_nav_filters ul > li .children li a, .sidebar .widget.widget_rating_filter ul > li .children li a, .sidebar .widget.widget_nav_menu ul > li .children li a,
 .footer-area .widget.widget_archive ul > li .children li a,
 .footer-area .widget.widget_categories ul > li .children li a,
@@ -8125,6 +8108,36 @@ header .sticky__label {
     font-size: 1.125px;
     /*font-size: 0.07031rem;*/
     font-size: 0.8rem;
+  }
+
+  .sidebar .widget.widget_archive ul > li .children li, .sidebar .widget.widget_categories ul > li .children li, .sidebar .widget.widget_product_categories ul > li .children li, .sidebar .widget.widget_pages ul > li .children li, .sidebar .widget.widget_meta ul > li .children li, .sidebar .widget.widget_rss ul > li .children li, .sidebar .widget.widget_layered_nav ul > li .children li, .sidebar .widget.widget_layered_nav_filters ul > li .children li, .sidebar .widget.widget_rating_filter ul > li .children li, .sidebar .widget.widget_nav_menu ul > li .children li,
+  .footer-area .widget.widget_archive ul > li .children li,
+  .footer-area .widget.widget_categories ul > li .children li,
+  .footer-area .widget.widget_product_categories ul > li .children li,
+  .footer-area .widget.widget_pages ul > li .children li,
+  .footer-area .widget.widget_meta ul > li .children li,
+  .footer-area .widget.widget_rss ul > li .children li,
+  .footer-area .widget.widget_layered_nav ul > li .children li,
+  .footer-area .widget.widget_layered_nav_filters ul > li .children li,
+  .footer-area .widget.widget_rating_filter ul > li .children li,
+  .footer-area .widget.widget_nav_menu ul > li .children li {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 543px) {
+  .sidebar .widget.widget_archive ul > li .children li, .sidebar .widget.widget_categories ul > li .children li, .sidebar .widget.widget_product_categories ul > li .children li, .sidebar .widget.widget_pages ul > li .children li, .sidebar .widget.widget_meta ul > li .children li, .sidebar .widget.widget_rss ul > li .children li, .sidebar .widget.widget_layered_nav ul > li .children li, .sidebar .widget.widget_layered_nav_filters ul > li .children li, .sidebar .widget.widget_rating_filter ul > li .children li, .sidebar .widget.widget_nav_menu ul > li .children li,
+  .footer-area .widget.widget_archive ul > li .children li,
+  .footer-area .widget.widget_categories ul > li .children li,
+  .footer-area .widget.widget_product_categories ul > li .children li,
+  .footer-area .widget.widget_pages ul > li .children li,
+  .footer-area .widget.widget_meta ul > li .children li,
+  .footer-area .widget.widget_rss ul > li .children li,
+  .footer-area .widget.widget_layered_nav ul > li .children li,
+  .footer-area .widget.widget_layered_nav_filters ul > li .children li,
+  .footer-area .widget.widget_rating_filter ul > li .children li,
+  .footer-area .widget.widget_nav_menu ul > li .children li {
+    margin-left: 10px;
   }
 }
 
@@ -10351,6 +10364,19 @@ header .sticky__label {
   .widget-area .widget.__tm_banners_grid_widget {
     margin-bottom: 13px;
   }
+  .sidebar .widget.widget_archive ul > li .children li, .sidebar .widget.widget_categories ul > li .children li, .sidebar .widget.widget_product_categories ul > li .children li, .sidebar .widget.widget_pages ul > li .children li, .sidebar .widget.widget_meta ul > li .children li, .sidebar .widget.widget_rss ul > li .children li, .sidebar .widget.widget_layered_nav ul > li .children li, .sidebar .widget.widget_layered_nav_filters ul > li .children li, .sidebar .widget.widget_rating_filter ul > li .children li, .sidebar .widget.widget_nav_menu ul > li .children li,
+  .footer-area .widget.widget_archive ul > li .children li,
+  .footer-area .widget.widget_categories ul > li .children li,
+  .footer-area .widget.widget_product_categories ul > li .children li,
+  .footer-area .widget.widget_pages ul > li .children li,
+  .footer-area .widget.widget_meta ul > li .children li,
+  .footer-area .widget.widget_rss ul > li .children li,
+  .footer-area .widget.widget_layered_nav ul > li .children li,
+  .footer-area .widget.widget_layered_nav_filters ul > li .children li,
+  .footer-area .widget.widget_rating_filter ul > li .children li,
+  .footer-area .widget.widget_nav_menu ul > li .children li {
+    margin-left: 0px;
+  }
 }
 
 .invert .woocommerce.widget.widget_price_filter {
@@ -11882,7 +11908,7 @@ h2.widget-title:before, h3.widget-title:before, .related h2:before {
 @media (min-width: 1200px) {
   .sidebar .widget-subscribe,
   .footer-area .widget-subscribe {
-    padding-top: 63px;
+    padding-top: 35px;
   }
   .sidebar .subscribe-block__message,
   .sidebar .follow-block__message,
